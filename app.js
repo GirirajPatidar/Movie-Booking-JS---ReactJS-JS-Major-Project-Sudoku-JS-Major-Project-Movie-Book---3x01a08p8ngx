@@ -1,4 +1,5 @@
 import { fetchMovieAvailability, fetchMovieList } from "./api.js"
+
 const mainElement = document.getElementById('main');
 let bookerGridHolder = document.getElementById('booker-grid-holder');
 let bookTicketBtn = document.getElementById('book-ticket-btn');
@@ -83,8 +84,8 @@ function createSeatsGrid(data) {
 
 let seatsSelected = [];
 function setEventsToSeats() {
-    let AvailableSeats = document.querySelectorAll('.available-seat');
-    AvailableSeats.forEach(seat => {
+    let AvaliableSeats = document.querySelectorAll('.available-seat');
+    AvaliableSeats.forEach(seat => {
         seat.addEventListener('click', _ => {
             saveSelectedSeat(seat);
         })
